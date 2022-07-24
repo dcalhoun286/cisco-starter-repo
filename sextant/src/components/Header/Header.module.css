@@ -2,9 +2,21 @@
 
 .header {
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .header h1 {
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  padding: auto;
   font-family: 'Albert Sans', sans-serif;
-  margin: auto;
+}
+
+.header span {
+  display: inline-block;
+  color: yellow;
+  font-size: 135px;
+  justify-self: flex-start;
 }
