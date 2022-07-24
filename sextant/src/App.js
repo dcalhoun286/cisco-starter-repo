@@ -1,5 +1,6 @@
 import './App.css';
 
+import Header from './components/Header/Header';
 import CardWrapper from './components/UI/Card/Card';
 
 const DUMMY_TEST_DATA = [
@@ -13,6 +14,7 @@ const DUMMY_TEST_DATA = [
 function App() {
   return (
     <div className="App">
+      <Header />
       {DUMMY_TEST_DATA.map((item) => (
         <CardWrapper>{item}</CardWrapper>
       ))}
