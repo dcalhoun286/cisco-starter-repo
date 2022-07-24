@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@600&display=swap');
+
+.header {
+  width: 100%;
+}
+
+.header h1 {
+  font-family: 'Albert Sans', sans-serif;
+  margin: auto;
+}
