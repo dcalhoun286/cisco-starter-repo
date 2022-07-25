@@ -17,6 +17,7 @@ const renderedDataItems = (
       <li id={item.id} key={item.id}>
         <CardWrapper>
           <h3>{item.title}</h3>
+          <hr></hr>
           <section>{item.content}</section>
         </CardWrapper>
       </li>
