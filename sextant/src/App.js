@@ -4,20 +4,30 @@ import Header from './components/Header/Header';
 import CardWrapper from './components/UI/Card/Card';
 
 const DUMMY_TEST_DATA = [
-  'data example - 1',
-  'data example - 2',
-  'data example - 3',
-  'data example - 4',
-  'data example - 5',
+  { id: 1, title: 'example 1 title', content: '**visualized data**' },
+  { id: 2, title: 'example 2 title', content: '**visualized data**' },
+  { id: 3, title: 'example 3 title', content: '**visualized data**' },
+  { id: 4, title: 'example 4 title', content: '**visualized data**' },
+  { id: 5, title: 'example 5 title', content: '**visualized data**' },
 ];
 
-function App() {
+const renderedDataItems = (
+  <ul>
+    {DUMMY_TEST_DATA.map((item) => (
+      <li id={item.id} key={item.id}>
+        <CardWrapper>
+          <h3>{item.title}</h3>
+          <section>{item.content}</section>
+        </CardWrapper>
+      </li>
+    ))}
+  </ul>
+);
+function App(props) {
   return (
     <div className="App">
       <Header />
-      {DUMMY_TEST_DATA.map((item) => (
-        <CardWrapper>{item}</CardWrapper>
-      ))}
+      {renderedDataItems}
     </div>
   );
 }
