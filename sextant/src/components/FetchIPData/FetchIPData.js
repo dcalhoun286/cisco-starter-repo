@@ -12,7 +12,7 @@ const FetchIPData = (props) => {
   const [ipData, setIpData] = useState([]);
 
   useEffect(() => {
-    fetch('https://api64.ipify.org?format=json')
+    fetch(props.url)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -26,7 +26,7 @@ const FetchIPData = (props) => {
           console.log(err);
         }
       );
-  }, []);
+  }, [props.url]);
 
   return (
     <React.Fragment>
