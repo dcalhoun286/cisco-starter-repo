@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import CardWrapper from './components/UI/Card/Card';
 
 import FetchIPData from './components/FetchIPData/FetchIPData';
+import Pylon from './components/Pylon/Pylon';
 
 function App(props) {
   const renderedIPv4Data = (
