@@ -41,6 +41,7 @@ function App(props) {
     <div className="App">
       <Header />
       {renderedIPData}
+      <Pylon />
     </div>
   );
 }
