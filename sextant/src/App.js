@@ -23,7 +23,14 @@ function App(props) {
     </CardWrapper>
   );
 
-  const ipDataList = [renderedIPv4Data, renderedIPv6Data];
+  const latencyData = (
+    <CardWrapper>
+      <h3>Package Latency from Pylon</h3>
+      <Pylon />
+    </CardWrapper>
+  );
+
+  const ipDataList = [renderedIPv4Data, renderedIPv6Data, latencyData];
 
   let liItem = 0;
 
@@ -41,7 +48,6 @@ function App(props) {
     <div className="App">
       <Header />
       {renderedIPData}
-      <Pylon />
     </div>
   );
 }
